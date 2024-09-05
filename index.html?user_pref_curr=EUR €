@@ -1,0 +1,2042 @@
+ <!DOCTYPE html>
+<html lang="en" translate="no">
+	<head>
+		<base href="">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Services</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+					<link rel="shortcut icon" type="image/ico" href="https://cdn.blazepanel.com/public/Az2xNh/882d0f5ce6bb5ef7032e62c85f62529c.png"/>
+		
+
+		<link rel="stylesheet" type="text/css" href="public/eternity/bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="public/styles/Azure_Eternity.css">
+
+        <link rel="stylesheet" type="text/css" href="public/styles/style.css"><link rel="stylesheet" href="https://cdn.blazepanel.com/global/panel/style.css?v=5"><link rel="stylesheet" href="https://cdn.blazepanel.com/global/panel/main.css?v=2510"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"><link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" />
+
+		<style>
+
+
+			@media only screen and (max-width: 990px) {
+				#curr_anchor {
+					height: 40px;
+				}
+
+			}
+			#block_337 {
+    padding-top: 10px; 
+}
+
+			#loading {
+				position: fixed;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				opacity: 0.7;
+				background-color: #F5F5F5;
+				z-index: 99;
+			}
+
+			#loading-image {
+				z-index: 100;
+			}
+
+
+			#loading span {
+				display: inline-block;
+				font-weight: 900;
+
+			}
+			
+		
+
+
+
+
+.body .form-group .select2-selection--single {
+		display: flex;
+		align-items: center;
+	}
+	
+	.body .component-sidebar__menu::-webkit-scrollbar {
+    background-color: rgba(255,255,255,0.07);
+    width: 15px;
+		border-top-right-radius:16px;
+	border-bottom-right-radius:16px;
+}
+
+.body .component-sidebar__menu::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,0.07);
+
+}
+.body .component-sidebar__menu::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    border: none;
+}
+
+.body .component-sidebar__menu::-webkit-scrollbar-button {
+    display:none;
+}
+
+	.body .component-sidebar__menu-wrapper {
+    overflow-x: visible; 
+}
+.body .component-sidebar__menu {
+    height: 72vh;
+	overflow-y:auto;
+
+}
+#block_357 .sidebar-block__left-menu li:hover {
+	background-color: rgba(255,255,255,0.1);
+	border-radius:10px;
+	transition: font-size 0.2s ease-in-out;
+}
+#block_357 .sidebar-block__left-menu li:hover a {
+	color:#fff !important;
+	font-weight:bolder;
+	font-size:16.5px;
+}
+			.component_private_navbar .navbar-nav-currencies {
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+}
+.body .balance-dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.body .balance-dropdown {
+  position: relative;
+  display: flex;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.body .balance-dropdown__name {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #000000;
+  box-shadow: none;
+  border-style: none;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: "";
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+.body .balance-dropdown__container {
+  position: absolute;
+  padding: 0px;
+  padding-top: 4px;
+  margin: 0px;
+  top: 100%;
+  z-index: 900;
+  max-height: 490px;
+  overflow-y: scroll;
+  background: rgb(255, 255, 255);
+  min-width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-color: lightgrey;
+}
+.body .balance-dropdown__item {
+  list-style: none;
+}
+.body .balance-dropdown__link {
+  display: block;
+
+  width: 100%;
+  white-space: nowrap;
+  font-size: "";
+  text-decoration: none;
+  color: #334e6e;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.body .balance-dropdown {
+  width: 100%;
+
+  padding-bottom: 0px;
+  flex-direction: column;
+}
+.body .balance-dropdown__toggle:after {
+  display: inline-block;
+
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  margin-left: 12px;
+}
+.body .balance-dropdown.show .balance-dropdown__toggle:after {
+  transform: rotate(180deg);
+  text-decoration: none;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown {
+  position: relative;
+  display: flex;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown__editor
+  .balance-dropdown__container {
+  visibility: hidden;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown__editor:hover
+  .balance-dropdown__container {
+  visibility: visible;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown.show
+  .balance-dropdown__toggle:after {
+  transform: rotate(180deg);
+  text-decoration: none;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown.show
+  .balance-dropdown__name {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #000000;
+  text-decoration: none;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown__container {
+   position: absolute;
+  padding: 0px;
+  padding-top: 4px;
+  margin-top: 5px;
+  top: 100%;
+  z-index: 100;
+  background: #ffffff;
+  min-width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-color: #000000;
+  box-shadow: none;
+  border-style: none;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown__item {
+  list-style: none;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown__link {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  font-size: "";
+  text-decoration: none;
+  color: rgba(51, 78, 110, 1);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown__link:hover {
+  color: #1f0b6c;
+  background: transparent;
+  text-decoration: none;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown-rtl
+  .balance-dropdown__toggle:after {
+  margin-left: 0px;
+  margin-right: 12px;
+}
+
+#block_357
+  .component_balance_dropdown
+  .balance-dropdown-rtl
+  .balance-dropdown__container {
+  text-align: right;
+}
+
+#block_357 .component_balance_dropdown .balance-dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body .balance-dropdown__name {
+    color: #fff;
+    font-weight: bold;
+    background:  rgba(255,255,255,0.05);
+	border: 1px solid rgb(255 255 255 / 20%) !important;
+    backdrop-filter: blur(20px);
+
+}
+li.nav-item.component-navbar-nav-item.component-navbar-private-nav-item:hover {
+    background: rgb(255,255,255,0.2);
+    border-radius: 8px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+	color:#fff !important;
+}
+
+li.nav-item.component-navbar-nav-item.component-navbar-private-nav-item.active {
+    background: rgb(255,255,255,0.1);
+    border-radius: 8px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+li.nav-item.component-navbar-nav-item.component-navbar-public-nav-item:hover {
+    background: rgb(255,255,255,0.1);
+    border-radius: 8px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+	color:#fff !important;
+}
+
+li.nav-item.component-navbar-nav-item.component-navbar-public-nav-item.active {
+    background: rgb(255,255,255,0.1);
+    border-radius: 8px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+
+@media (max-width: 991px) {
+  #block_357 .component_balance_dropdown .balance-dropdown {
+    width: 100%;
+    padding-bottom: 0px;
+    flex-direction: column;
+  }
+
+  #block_357 .component_balance_dropdown .balance-dropdown-container {
+    width: 100%;
+  }
+
+  #block_357 .component_balance_dropdown .balance-dropdown__container {
+    position: relative;
+    visibility: visible;
+    display: none;
+  }
+
+  #block_357
+    .component_balance_dropdown
+    .balance-dropdown.show
+    .balance-dropdown__container {
+    display: block;
+    text-decoration: none;
+  }
+
+  #block_357 .component_balance_dropdown .balance-dropdown__name {
+    width: 100%;
+  }
+  	 #block_357 .component_private_navbar .navbar-nav-currencies {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+	margin-bottom:5px;
+  }
+
+  #block_357 .navbar-nav-currencies {
+    order: -1;
+  }
+  #block_13 .affiliate-block__main .card {
+    margin-bottom: 30px;
+}
+
+}
+
+
+.dropdown-menu {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-height: 380px;
+    overflow-y: auto;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1.5px solid #ffffff82;
+    box-shadow: 0 12px 24px 12px rgba(0, 0, 0,0.2);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+    clear: both;
+    font-weight: 400;
+    color: #000 !important;
+    white-space: normal;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-item:active {
+     width: 100% !important; 
+    color: white !important;
+	background-color:#f8f9fa;
+}
+		</style>
+
+	</head>
+
+
+	<div style="display:none;" id="loadderr" class="container">
+		<div class="row">
+			<div style="margin:auto;" id="loading">
+				<img id="loading-image" src="public/ajax-loading.gif" alt="Loading..."/>
+				<br>
+				<h3 id="processing">
+					Processing Payment....
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	
+
+					<body class="body">
+						<div class="wrapper  wrapper-navbar ">
+							<div id="block_35">
+								<div class="block-wrapper">
+									<div class="component_navbar ">
+										<div class="component-navbar__wrapper">
+											<div class="sidebar-block__top component-navbar component-navbar__navbar-public editor__component-wrapper">
+												<div class="container">
+													<nav class="navbar navbar-expand-lg navbar-light">
+														<div class="sidebar-block__top-brand">
+															<div class="component-navbar-brand component-navbar-public-brand">
+																<a target="_self" href="terms">
+																	<span style="text-transform: uppercase">
+																		<span style="font-size: 24px">
+																			<span style="letter-spacing: 1.0px">
+																				 <span style="line-height: 48px">
+                                                                                                                                            <p style="font-weight:700;">
+                                                                            Nexus Store
+                                                                        </p>
+                                                                                                                                    </span>
+																			</span>
+																		</span>
+																	</span>
+																</a>
+															</div>
+														</div>
+													
+														<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-35" aria-controls="navbar-collapse-35" aria-expanded="false" aria-label="Toggle navigation">
+															<span class="navbar-burger">
+																<span class="navbar-burger-line"></span>
+															</span>
+														</button>
+														<div class="collapse navbar-collapse" id="navbar-collapse-35">
+															<div class="d-flex flex-wrap component-navbar-collapse">
+																<ul class="navbar-nav">
+
+
+																	
+																																																								
+
+																			<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+																				<a class="component-navbar-nav-link component-navbar-nav-link__navbar-public       " href="auth">
+
+																					<span style="margin-right:4px;" class=""></span>
+
+
+																																																																																Sign in	
+
+																				</a>
+																			</li>
+
+																																			
+																																																								
+
+																			<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+																				<a class="component-navbar-nav-link component-navbar-nav-link__navbar-public       " href="signup">
+
+																					<span style="margin-right:4px;" class=""></span>
+
+
+																																																																																Signup	
+
+																				</a>
+																			</li>
+
+																																			
+																																																								
+
+																			<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+																				<a class="component-navbar-nav-link component-navbar-nav-link__navbar-public       component-navbar-nav-link-active__navbar-public   " href="index.html?user_pref_curr=USD%20$">
+
+																					<span style="margin-right:4px;" class=""></span>
+
+
+																																																																																Services	
+
+																				</a>
+																			</li>
+
+																																			
+																																																								
+
+																			<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+																				<a class="component-navbar-nav-link component-navbar-nav-link__navbar-public       " href="api">
+
+																					<span style="margin-right:4px;" class=""></span>
+
+
+																																																																																API	
+
+																				</a>
+																			</li>
+
+																																			
+
+																	<li></li>
+																	<li>
+
+
+																																					
+																				<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+
+																					<a id="curr_anchor" class="component-navbar-nav-link  component-navbar-nav-link__navbar-private dropdown-toggle " href="terms#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">EUR
+																					</a>
+
+
+																					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																						
+
+																							<li>
+																								<a class="dropdown-item" href="https://nexusstore.in.net?user_pref_curr=INR ₹">INR ₹</a>
+																							</li>
+
+
+																						
+
+																							<li>
+																								<a class="dropdown-item" href="https://nexusstore.in.net?user_pref_curr=PKR Rs">PKR Rs</a>
+																							</li>
+
+
+																						
+
+																							<li>
+																								<a class="dropdown-item" href="https://nexusstore.in.net?user_pref_curr=USD $">USD $</a>
+																							</li>
+
+
+																						
+																					</ul>
+
+
+																				</li>
+																																																						</li>
+
+																</ul>
+
+															</div>
+														</div>
+													</nav>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+												<style>
+							.body .modal .modal-content {
+								background: #fff;
+								color: black;
+							}
+
+							.modal-header h5 {
+								color: black;
+							}
+							.modal-footer a {
+								color: #fff;
+							}
+							.modal-header {
+								border-bottom: none;
+							}
+							.modal-footer {
+								border-top: none;
+							}
+						</style>
+
+																	
+
+
+<div class="wrapper-content">
+	<div class="wrapper-content__header"></div>
+	<div
+		class="wrapper-content__body">
+
+
+		<!-- Main variables *content* -->
+		
+			
+
+			<div id="block_334">
+
+				<div class="services-list ">
+					<div class="bg"></div>
+					<div class="divider-top"></div>
+					<div class="divider-bottom"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="services_filters services_filter-margin component_filter_button component_filter_form_group component_filter_card">
+									<div class="card">
+										<div class="row">
+											<div class="col-md-auto mb-3 mb-md-0">
+												<div class="dropdown">
+													<a class="btn filter-primary w-sm-auto w-100 dropdown-toggle" href="terms#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<span class="far fa-filter"></span>
+														<span class="services-filter__active-category" data-filter-active-category="true"></span>
+													</a>
+													<div  style="max-height:350px; max-width:300px; overflow:auto;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+														<a class="dropdown-item" data-filter-category-id="All">All</a>
+																													<a class="dropdown-item" data-filter-category-id="1" data-filter-category-name="Instagram Followers Updated">Instagram Followers Updated</a>
+																													<a class="dropdown-item" data-filter-category-id="2" data-filter-category-name="Instagram Likes  [Guaranteed]">Instagram Likes  [Guaranteed]</a>
+																													<a class="dropdown-item" data-filter-category-id="3" data-filter-category-name="Instagram Reel Views">Instagram Reel Views</a>
+																													<a class="dropdown-item" data-filter-category-id="4" data-filter-category-name="🇮🇳 IG Followers » INDIAN">🇮🇳 IG Followers » INDIAN</a>
+																													<a class="dropdown-item" data-filter-category-id="5" data-filter-category-name="Instagram indian like">Instagram indian like</a>
+																											</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="input-group">
+													<input type="text" class="form-control" data-search-service="#service-table-21">
+													<span class="input-group-append component_button_search">
+														<button class="btn btn-secondary" type="button" data-filter-serch-btn="true">
+															<i class="far fa-search"></i>
+														</button>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="services-list__table">
+									<div class="table-bg component_table" id="service-table-21">
+																					<div class="table-wr table-responsive mb-3" data-filter-table-wrapper="1">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th class="nowwrap">Service Name</th>
+															<th class="nowwrap">Price</th>
+															<th class="nowwrap">Min</th>
+															<th class="nowwrap">Max</th>
+																															<th class="nowrap">Average Time</th>
+																														<th class="hidden-xs hidden-sm service-description__th">Description</th>
+														</tr>
+													</thead>
+													<thead>
+														<th colspan="7" class="styles-services-default services-category">
+															<i class=""></i>
+															Instagram Followers Updated
+														</th>
+													</thead>
+													<tbody>
+																												
+															<tr data-filter-table-category-id="1">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="1">1</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Followers [ Old Data ] [Lifetime Refill] [1K-2K SPEED] [SLOW WORKING ]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.00
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">100000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Followers [ Old Data ] [Lifetime Refill] [1K-2K SPEED] [SLOW WORKING ]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							<a href="https://ibb.co/gSx2zPV"><img src="https://i.ibb.co/gSx2zPV/IMG-20240817-WA0031.jpg" alt="IMG-20240817-WA0031" border="0"></a><br /><br />Before placing an order on the account on which you want to get Instagram followers, you must check this.   <br /><br />:- Visit Account Settings.<br />:- Select Follow and Invite Friends.<br />:- Open Flag for Review option and disable it. <br /><br />After doing this new followers would be automatically added into the account as<br /><br />Speed - 1k-2K/Day<br />Good Quality followers<br />5-10% drop<br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis1">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="1">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="2">2</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Followers  |  15+ POST OLD ACCOUNTS| 365 Days Refill </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.19
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">1000000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Followers  |  15+ POST OLD ACCOUNTS| 365 Days Refill 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							<a href="https://ibb.co/gSx2zPV"><img src="https://i.ibb.co/gSx2zPV/IMG-20240817-WA0031.jpg" alt="IMG-20240817-WA0031" border="0"></a><br /><br />Before placing an order on the account on which you want to get Instagram followers, you must check this.   <br /><br />:- Visit Account Settings.<br />:- Select Follow and Invite Friends.<br />:- Open Flag for Review option and disable it. <br /><br />After doing this new followers would be automatically added into the account as<br /><br />Start : 60 minutes <br />Quality : Old account <br />Drop: under 10%<br />Refil : 365 DAYS<br />DISCOUNT NOT POSSIBLE </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis2">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="1">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="3">3</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Followers [SPEED DAY 40K to 80K] [Old account ] LIFETIME REFILL♻️ </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.4
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">350000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Followers [SPEED DAY 40K to 80K] [Old account ] LIFETIME REFILL♻️ 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Speed ~ 40k to 80k day speed<br />Drop~ 2%- 5%<br />Lifetime refil <br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis3">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="1">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="4">4</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Followers | Speed 2-5K/Day | OLD  ACCOUNT 15+ POST |  365 Days 𝗥𝗘𝗙𝗜𝗟𝗟  Guaranteed</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.44
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">5000000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Followers | Speed 2-5K/Day | OLD  ACCOUNT 15+ POST |  365 Days 𝗥𝗘𝗙𝗜𝗟𝗟  Guaranteed
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							<a href="https://ibb.co/gSx2zPV"><img src="https://i.ibb.co/gSx2zPV/IMG-20240817-WA0031.jpg" alt="IMG-20240817-WA0031" border="0"></a><br /><br />Before placing an order on the account on which you want to get Instagram followers, you must check this.   <br /><br />:- Visit Account Settings.<br />:- Select Follow and Invite Friends.<br />:- Open Flag for Review option and disable it. <br /><br />After doing this new followers would be automatically added into the account as<br /><br />Slow start<br />Drop - 0%-10%<br />Speed - 2-5K DAY<br />REFILL - 365DAYS<br />Quality - 15+ post old account </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis4">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="1">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="5">5</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">🔥Instagram Followers [ Old Data |  100K DAY SPEED ] [ High Quality ] [Lifetime refil🔥</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.65
+
+
+																</td>
+																<td data-label="Min order">25</td>
+																<td data-label="Max order">800000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">🔥Instagram Followers [ Old Data |  100K DAY SPEED ] [ High Quality ] [Lifetime refil🔥
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							<a href="https://ibb.co/gSx2zPV"><img src="https://i.ibb.co/gSx2zPV/IMG-20240817-WA0031.jpg" alt="IMG-20240817-WA0031" border="0"></a><br /><br />Before placing an order on the account on which you want to get Instagram followers, you must check this.   <br /><br />:- Visit Account Settings.<br />:- Select Follow and Invite Friends.<br />:- Open Flag for Review option and disable it. <br /><br />After doing this new followers would be automatically added into the account as<br /><br />Quality: old ac 15 -20 post<br />Guarantee : lifetime Refill<br />Drop Ratio : NON DROP <br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis5">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																											</tbody>
+												</table>
+											</div>
+																					<div class="table-wr table-responsive mb-3" data-filter-table-wrapper="2">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th class="nowwrap">Service Name</th>
+															<th class="nowwrap">Price</th>
+															<th class="nowwrap">Min</th>
+															<th class="nowwrap">Max</th>
+																															<th class="nowrap">Average Time</th>
+																														<th class="hidden-xs hidden-sm service-description__th">Description</th>
+														</tr>
+													</thead>
+													<thead>
+														<th colspan="7" class="styles-services-default services-category">
+															<i class=""></i>
+															Instagram Likes  [Guaranteed]
+														</th>
+													</thead>
+													<tbody>
+																												
+															<tr data-filter-table-category-id="2">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="6">6</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Likes | ♻️365 Days </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.04
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">300000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Likes | ♻️365 Days 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Non drop  or 5% <br />Speed 2k hour </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis6">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="2">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="8">8</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Likes Non Drop 100k speed /Life time Guaranteed </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.12
+
+
+																</td>
+																<td data-label="Min order">20</td>
+																<td data-label="Max order">80000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Likes Non Drop 100k speed /Life time Guaranteed 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Instant start<br />100k day<br />0% drop</p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis8">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="2">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="9">9</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Likes [ Lifetime ] NON DROP [ Premium Quality ]  </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.2
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">50000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Likes [ Lifetime ] NON DROP [ Premium Quality ]  
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Refil: lifetime<br />Drop: no<br />Quality: Premium <br />Speed : 2k + hr</p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis9">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																											</tbody>
+												</table>
+											</div>
+																					<div class="table-wr table-responsive mb-3" data-filter-table-wrapper="3">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th class="nowwrap">Service Name</th>
+															<th class="nowwrap">Price</th>
+															<th class="nowwrap">Min</th>
+															<th class="nowwrap">Max</th>
+																															<th class="nowrap">Average Time</th>
+																														<th class="hidden-xs hidden-sm service-description__th">Description</th>
+														</tr>
+													</thead>
+													<thead>
+														<th colspan="7" class="styles-services-default services-category">
+															<i class=""></i>
+															Instagram Reel Views
+														</th>
+													</thead>
+													<tbody>
+																												
+															<tr data-filter-table-category-id="3">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="10">10</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Reel Views | Cheapest In market [ Slow ]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.01
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">200000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Reel Views | Cheapest In market [ Slow ]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Start : 60 minutes <br />Stucked : Currently No<br />Refill : Lifetime ♻️<br />Speed :  10K-20K Day </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis10">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="3">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="11">11</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Views [ Fast Working ]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.01
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">100000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Views [ Fast Working ]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Slow speed<br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis11">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="3">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="12">12</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Reel Views </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.01
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">2147483647</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Reel Views 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							30-60 min start<br />DAY 10K  SPEED<br />Order small quantity </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis12">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="3">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="13">13</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true"> Instagram reels views [Good speed]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.01
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">2147483647</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel"> Instagram reels views [Good speed]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							🔰Start time- 0-1 hours  sometime take some delay for start<br />✈️Speed - 20-30k per Day<br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis13">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="3">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="15">15</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Views | 𝗦𝘂𝗽𝗲𝗿𝗙𝗮𝘀𝘁 + 😍🥵 𝗜𝗻𝘀𝘁𝗮𝗻𝘁 𝗩𝗶𝗲𝘄  </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.04
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">100000000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Views | 𝗦𝘂𝗽𝗲𝗿𝗙𝗮𝘀𝘁 + 😍🥵 𝗜𝗻𝘀𝘁𝗮𝗻𝘁 𝗩𝗶𝗲𝘄  
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Fast start<br />Good speed</p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis15">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																											</tbody>
+												</table>
+											</div>
+																					<div class="table-wr table-responsive mb-3" data-filter-table-wrapper="4">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th class="nowwrap">Service Name</th>
+															<th class="nowwrap">Price</th>
+															<th class="nowwrap">Min</th>
+															<th class="nowwrap">Max</th>
+																															<th class="nowrap">Average Time</th>
+																														<th class="hidden-xs hidden-sm service-description__th">Description</th>
+														</tr>
+													</thead>
+													<thead>
+														<th colspan="7" class="styles-services-default services-category">
+															<i class=""></i>
+															🇮🇳 IG Followers » INDIAN
+														</th>
+													</thead>
+													<tbody>
+																												
+															<tr data-filter-table-category-id="4">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="18">18</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Followers  [100% Indian name ] [0-24/H] [10K/D] [R365</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.96
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">400000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Followers  [100% Indian name ] [0-24/H] [10K/D] [R365
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							24 Hr starting time<br />Speed  10K Day<br />10% drop<br />💎Best Indian followers 💎</p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis18">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="4">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="19">19</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Indian Followers [Premium Quality] </td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 1.7
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">3000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Indian Followers [Premium Quality] 
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Start -: 60 minutes <br />Drop : Possible real account can be unfollowQuality : Premium Indian  with some Power followers<br />Refill : No refill <br />Drop : happen high<br />Test first small quantity </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis19">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																											</tbody>
+												</table>
+											</div>
+																					<div class="table-wr table-responsive mb-3" data-filter-table-wrapper="5">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th class="nowwrap">Service Name</th>
+															<th class="nowwrap">Price</th>
+															<th class="nowwrap">Min</th>
+															<th class="nowwrap">Max</th>
+																															<th class="nowrap">Average Time</th>
+																														<th class="hidden-xs hidden-sm service-description__th">Description</th>
+														</tr>
+													</thead>
+													<thead>
+														<th colspan="7" class="styles-services-default services-category">
+															<i class=""></i>
+															Instagram indian like
+														</th>
+													</thead>
+													<tbody>
+																												
+															<tr data-filter-table-category-id="5">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="20">20</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Indian Likes [ Mix Good quality ]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.24
+
+
+																</td>
+																<td data-label="Min order">50</td>
+																<td data-label="Max order">30000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Indian Likes [ Mix Good quality ]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							mix Good quality <br /></p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis20">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="5">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="21">21</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Likes [RAL™] [Pure Indian] [No Drop] [50-100K/D]</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.23
+
+
+																</td>
+																<td data-label="Min order">100</td>
+																<td data-label="Max order">300000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Likes [RAL™] [Pure Indian] [No Drop] [50-100K/D]
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							Non drop<br />INSTENT start </p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis21">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																												
+															<tr data-filter-table-category-id="5">
+															
+															
+																<td data-label="ID" data-filter-table-service-id="22">22</td>
+																<td data-label="Service" class="table-service" data-filter-table-service-name="true">Instagram Like | INDIAN Profile | NEVER DROP | Max 10k | Instant | 🔥</td>
+
+																<td data-label="Rate per 1000">
+
+
+																		≈ € 0.25
+
+
+																</td>
+																<td data-label="Min order">10</td>
+																<td data-label="Max order">30000</td>
+																																	<td>
+																		Not Enough Data</td>
+																																<td>
+																																			<!-- Modal -->
+																		<div class="modal fade" id="servis22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered" role="document">
+																				<div class="modal-content">
+																					<div class="modal-header">
+																						<h5 class="modal-title" id="exampleModalLabel">Instagram Like | INDIAN Profile | NEVER DROP | Max 10k | Instant | 🔥
+																						</h5>
+																						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">×</span>
+																						</button>
+																					</div>
+																					<div class="modal-body text-left">
+																						<p class="detail-data details-split-959">
+																							100% active like<br />Most sale Indian like service ❤️🔥</p>
+																					</div>
+																					<div class="modal-footer">
+																						<button type="button" class="btn btn-actions" data-dismiss="modal">Close</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<a href="javascript:void(0)" class="btn btn-actions " data-toggle="modal" data-target="#servis22">
+																			View
+																		</a>
+																																	</td>
+															</tr>
+																											</tbody>
+												</table>
+											</div>
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+		<div class="wrapper-content__footer"></div>
+	</div>
+</div><div id="themes-notify-container" class="themes-notify-top-right">
+<div style="display:none;" id="notify-wrapper" class="alert alert-success mb-3"></div>
+</div>
+
+
+<style>
+
+	#point-status {
+		padding-left: 0;
+	}
+	#point-status .modal-content {
+		position: absolute;
+		top: 100px;
+	}
+
+	.point-status-detail li.point-status-li i {
+		font-size: 26px;
+		font-size: 22px;
+		margin-right: 8px;
+		color: #f7d514;
+		color: #6CC85F;
+	}
+	.status-row {
+		width: 100%;
+		height: 10px;
+		background-color: #6CC85F;
+	}
+	.status-txt {
+		color: #6CC85F;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	.dual-status .media-body p {
+		color: #6CC85F;
+		margin-bottom: 0;
+		font-weight: 600;
+	}
+	.status-link {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0;
+		color: black;
+	}
+	.modal-body {
+		background: #f5f1ff;
+	}
+	#point-status button.close,
+	#vipstatus button.close {
+		opacity: 1;
+		background-color: #f5f1ff;
+		width: 45px;
+		height: 50px;
+		position: absolute;
+		top: -55px;
+		right: 0;
+		color: #000;
+		font-size: 40px;
+		font-weight: 100;
+		transition: 0.1s linear;
+	}
+	.dual-status .media-heading {
+		font-size: 24px;
+		color: #000;
+	}
+	.point-status-detail li.point-status-li {
+		color: #000;
+		text-decoration: none;
+	}
+
+
+	#point-status .nav-tabs li a,
+	#vipstatus .nav-tabs li a {
+
+		color: #000;
+		background: transparent;
+		font-weight: 500;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+		/* min-width: 156px; */
+		min-width: 126px;
+		margin-right: 30px;
+		margin-left: 15px;
+		text-align: center;
+
+	}
+
+	#point-status .nav-tabs {
+
+		justify-content: center !important;
+		margin-bottom: 20px;
+		border-bottom: none;
+	}
+
+
+	#point-status .nav-link {
+
+		justify-content: center !important;
+
+	}
+
+	#point-status .media-object {
+		margin-right: 5px;
+	}
+
+
+	#point-status .nav-tabs li a.active,
+	#vipstatus .nav-tabs li a.active {
+		color: white !important;
+
+		background: blue;
+
+		font-weight: 500;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		border: 0;
+		padding-left: 0;
+		padding-right: 0;
+		/* min-width: 156px; */
+		min-width: 126px;
+		margin-right: 30px;
+		margin-left: 15px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#point-status .nav-tabs li a i,
+	#vipstatus .nav-tabs li a i {
+		margin-right: 5px;
+	}
+	#point-status .nav-tabs li a.active i,
+	#vipstatus .nav-tabs li a.active i {
+		text-decoration: none !important;
+	}
+
+	#point-status .point-status-detail,
+	#vipstatus .point-status-detail {
+		padding-left: 0;
+		list-style: none;
+		margin-bottom: 0;
+	}
+
+	.point-status-detail li.point-status-li {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.dual-status {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin: 25px 15px;
+	}
+
+	.point-status-detail li.point-status-li {
+		color: #000;
+		text-decoration: none;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.point-status-detail li {
+		font-size: 15px;
+		/* color: #db2c55; */
+		color: #919199;
+		text-decoration: ;
+		text-decoration: line-through;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+
+	text-decoration: underline;
+	@media(max-width: 650px) {
+
+		.dual-status {
+			display: block;
+		}
+		p.status-link {
+			display: block;
+			text-align: center;
+			margin: 30px 0;
+		}
+		#point-status .nav-tabs,
+		#vipstatus .nav-tabs {
+			display: flex;
+			flex-wrap: wrap;
+			border-bottom: 0;
+			justify-content: center;
+		}
+	}
+
+	.announce_time {
+		position: absolute;
+		top: 9px;
+		right: 12px;
+		width: 20%;
+
+	}
+
+	.announce_title {
+		width: 60%;
+		margin-left: 16px;
+	}
+
+	.annouce_icon {
+		width: 10%;
+		float: left;
+		margin-top: 9px;
+	}
+
+	#block_138 {
+		position: relative;
+		min-height: auto;
+		padding-bottom: 10.9906px;
+		padding-top: 10.981100000000001px;
+	}
+	#block_138 .divider-top {
+		background-image: none;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		transform: rotateY(180deg);
+		background-repeat: repeat-x;
+		background-position: 0 0;
+		background-size: 100% 58px;
+		height: 58px;
+		z-index: 0;
+	}
+	#block_138 .divider-bottom {
+		background-image: none;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		transform: rotateY(180deg);
+		background-repeat: repeat-x;
+		background-position: 0 0;
+		background-size: 100% 58px;
+		height: 58px;
+		z-index: 0;
+	}
+	#block_138 .bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		background-image: none;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		opacity: 1;
+		filter:blur(0px);
+	}
+	#block_138 .bg:after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+	}
+	
+</style>
+
+ 
+
+<div class="modal fade" id="point-status" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content modal-dialog-centered">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-body">
+
+				<p class="status-txt">Account Points</p>
+				<div class="status-row"></div>
+				<div class="tab-content pointsDiv" id="myTabContent">
+					<div class="row">
+						<div class="col-lg-12">
+							<br/>
+
+							<div class="dual-status">
+
+								<div class="next-status">
+									<div class="media">
+										<div class="media-left media-middle">
+											<img class="media-object" src="https://cdn.mypanel.link/9f0e19/uonayn64fi40fbrh.png">
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading text-left">
+												<span>
+													<strong id="userPoint">
+													</strong>
+													≈
+													<strong id="userMoney">0
+													</strong>
+													€</span>
+											</h4>
+											<p>User Money</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p>
+								<b>NOTE</b>
+							</p>
+							<p>
+								* = You earn points by ordering. Each
+								0
+								€
+								spent by you =
+								
+								point.<br>
+								** = Each
+								
+								points =
+								0
+								€
+								or more depending on your Account status.<br>
+								*** = You cannot redeem less than
+								
+								points.<br>
+								**** = To convert your point into funds, you must open a ticket and choose the subject "Points" and write down "Redeem All".<br>
+								***** = To prevent spam, it will take a minimum of
+								
+								days to convert your points into funds, and up to
+								
+								days!
+							</p>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper-content__footer">
+	<div id="block_269"></div>
+</div>
+
+
+
+<div class="modal fade" id="acc-status" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg">
+<div class="modal-content modal-dialog-centered">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<div class="modal-body">
+		<ul
+			class="nav nav-tabs" id="myTab" role="tablist">
+
+		 
+												
+
+			
+		</ul>
+	 
+		<div class="tab-content" id="myTabContent">
+
+
+			
+		 
+			
+		</div>
+	</div>
+</div>
+ 
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="public/blue_eternity/js1.js"></script>
+<script type="text/javascript" src="public/blue_eternity/js2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="public/blue_eternity/js3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+<script>
+	$("#notificationModal_1").on("hidden.bs.modal", function () {
+var popIds = $(this).attr("popids");
+// console.log(this);
+$.ajax({
+type: "POST",
+url: "ajax_data",
+data: {
+action: "close_popup",
+popIds: popIds
+},
+success: function (data) {}
+});
+});
+$("#notificationModal_1").modal("show");
+</script>
+
+
+ <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+ 
+<script src="https://cdn.jsdelivr.net/gh/andreivictor/select2-dropdownPosition/select2-dropdownPosition.js"></script>
+
+<script type="text/javascript" src="public/snow.js">
+    </script><script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var newYearEvent = new window.NewYearEvent({"snow":{"init":false,"options":{"particles":{"move":{"speed":3,"bounce":false,"enable":true,"random":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200},"out_mode":"out","straight":false,"direction":"bottom"},"size":{"anim":{"sync":false,"speed":40,"enable":false,"size_min":0.1},"value":10,"random":true},"color":{"value":"#fff"},"number":{"value":500,"density":{"enable":true,"value_area":650}},"opacity":{"anim":{"sync":false,"speed":1,"enable":true,"opacity_min":0.9},"value":0.9,"random":true},"line_linked":{"color":"#ffffff","width":1,"enable":false,"opacity":0.8,"distance":500}},"interactivity":{"modes":{"bubble":{"size":4,"speed":3,"opacity":1,"distance":400,"duration":0.3},"repulse":{"speed":3,"distance":200,"duration":0.4}},"events":{"resize":true,"onclick":{"mode":"repulse","enable":true},"onhover":{"mode":"bubble","enable":false}},"detect_on":"window"},"retina_detect":true}},"toys":{"init":false,"options":{"count":100,"speed":1,"images":["https://cdn.blazepanel.com/global/img/image1.png","https://cdn.blazepanel.com/global/img/image2.png","https://cdn.blazepanel.com/global/img/image5.png","https://cdn.blazepanel.com/global/img/image7.png","https://cdn.blazepanel.com/global/img/image8.png"],"maxSize":30,"launches":"1"}},"garland":{"init":false,"options":{"type":"apple","style":"style1"}},"fireworks":{"init":false,"options":{"delay":{"max":30,"min":30},"friction":0.95,"launches":1,}}})
+    newYearEvent.start()});
+    </script><script>window.siteData = '{"broadcasts":{"alerts":"","alerts_ids":""},"general":{"url":"https:\/\/nexusstore.in.net\/","current_page":"services","select2Class":"et-azure","allow_google_login":"0"}}';</script><script>window.userData = '{"client_id":null,"username":null,"name":null,"email":null,"ip":"2409:40f3:1092:761e:18ed:dbff:fe92:9474"}';</script><script src="https://code.jquery.com/jquery-3.3.1.min.js""></script><script src="public/datepicker/js/bootstrap-datepicker.min.js""></script><script src="public/datepicker/locales/bootstrap-datepicker.en-GB.min.js""></script><script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js""></script><script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js""></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@7""></script><script src="https://cdn.jsdelivr.net/gh/andreivictor/select2-dropdownPosition/select2-dropdownPosition.js""></script><script src="https://cdn.blazepanel.com/global/panel/script.js?v=1725518985""></script><script src="https://cdn.blazepanel.com/global/panel/alert.js?v0001""></script>
+
+<script>
+	if (window.history.replaceState) {
+window.history.replaceState(null, null, window.location.href);
+}
+</script></body></html>
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+919656397582", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>

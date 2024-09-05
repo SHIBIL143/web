@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api
+Disallow: /example.txt
+Sitemap: https://nexusstore.in.net/sitemap.xml
